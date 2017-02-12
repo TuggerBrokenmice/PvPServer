@@ -141,7 +141,6 @@
 	"weapons"
 	{
 	   //slot 1/ primary weapons
-	   	//shouldn't akm be free
 	   	"weapon_akm"
 		{
 			"weapon_cost"		"0"
@@ -154,18 +153,26 @@
 		{
 			"weapon_cost"		"2"
 		}
-		
-	   //slot 2 weapons: smgs, shotguns, handguns
-	   	//default pistols should be nearly free
-		"weapon_m9"
+		"weapon_ae_m1garand"
 		{
 			"weapon_cost"		"0"
 		}
-		"weapon_
+		
+	   //slot 2 weapons: smgs, shotguns, handguns
 		//change cost of glock from 0 points to 3 points
 		"weapon_ae_glock18"
 		{
 			"weapon_cost"		"3"
+		}
+		"weapon_ae_beretta93r"
+		{
+			"weapon_cost"		"3"
+			"recoil"
+			{
+				"recoil_lateral_range"			"-0.35 0.35"
+				"recoil_vertical_punch"			"1.725 1.95"
+				"recoil_aim_punch"				"0.35 0.5"
+			}
 		}
 	   //explosives
 	   	//change m67 and f1 to be 1 point
@@ -189,6 +196,11 @@
 				"clip_max_rounds"	"1"
 			}
 		}
+		"weapon_molotov"
+		{
+			"weapon_cost" "0"
+		}
+		
 		
 		
 	}
