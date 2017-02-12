@@ -138,6 +138,60 @@
 			}
 		}
 	}
+	"weapons"
+	{
+	   //slot 1/ primary weapons
+	   	//shouldn't akm be free
+	   	"weapon_akm"
+		{
+			"weapon_cost"		"0"
+		}
+		"weapon_m16"
+		{
+			"weapon_cost"		"1"
+		}
+		"weapon_ak74"
+		{
+			"weapon_cost"		"2"
+		}
+		
+	   //slot 2 weapons: smgs, shotguns, handguns
+	   	//default pistols should be nearly free
+		"weapon_m9"
+		{
+			"weapon_cost"		"0"
+		}
+		"weapon_
+		//change cost of glock from 0 points to 3 points
+		"weapon_ae_glock18"
+		{
+			"weapon_cost"		"3"
+		}
+	   //explosives
+	   	//change m67 and f1 to be 1 point
+		"weapon_f1"
+		{
+			"weapon_cost"		"1"
+		}
+		"weapon_m67"
+		{
+			"weapon_cost"		"1"
+		}
+		//rpg-7 gets extra 
+		"weapon_rpg7"
+		{
+			"weapon_cost"		"4"
+			"ammo_clip"
+			{
+				"ammo_type"	"rocket_rpg7"
+				"clip_max"	"3"
+				"clip_default"	"3"
+				"clip_max_rounds"	"1"
+			}
+		}
+		
+		
+	}
 	"weapon_upgrades"
 	{
 		"speed_holster"
