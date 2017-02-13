@@ -12,25 +12,36 @@
 				"#Fireteam_Alpha"	// small arms
 				{
 					"#Squad_Fireteam_WeaponsSgt"			"template_recon_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_specialist_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_rifleman_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_breacher_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_sniper_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_demolitions_security_coop"	
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_support_security_coop"	
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_designated_marksman_security_coop"			
+					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security_coop"
+					"#Squad_Fireteam_Breacher"		"template_breacher_security_coop"
+					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"	
+					"#Squad_Fireteam_Support"		"template_support_security_coop"	
+					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security_coop"	
+					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"		
 				}
 				// assault squad
 				"#Fireteam_Bravo"	// small arms
 				{
 					"#Squad_Fireteam_WeaponsSgt"			"template_recon_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_specialist_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_rifleman_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_breacher_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_sniper_security_coop"
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_demolitions_security_coop"	
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_support_security_coop"	
-					"#Squad_Fireteam_WeaponsSpecialist"		"template_designated_marksman_security_coop"			
+					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security_coop"
+					"#Squad_Fireteam_Breacher"		"template_breacher_security_coop"
+					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"	
+					"#Squad_Fireteam_Support"		"template_support_security_coop"	
+					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security_coop"	
+					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"		
+				}
+				"#Fireteam_Charlie"	// small arms
+				{
+					"#Squad_Fireteam_WeaponsSgt"			"template_recon_security_coop"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security_coop"
+					"#Squad_Fireteam_Breacher"		"template_breacher_security_coop"
+					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"	
+					"#Squad_Fireteam_Support"		"template_support_security_coop"	
+					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security_coop"	
+					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"		
 				}
 			}
 		}
@@ -39,22 +50,6 @@
 		{
 			"squads"
 			{
-				// Specialist		Smokes
-				// Fighter			Incendiary
-				// Machine gunner	Frag
-				// Sapper			RPG
-				// Sharpshooter		None
-				
-				// originally
-				// "#Squad_Cell_Leader_Specialist"				"template_coop_specialist" // smokes
-				// "#Squad_Cell_Specialist"						"template_coop_specialist"  // smokes
-				// "#Squad_Cell_Fighter"						"template_coop_fighter" // incendiary
-				// "#Squad_Cell_Fighter"						"template_coop_fighter" // incendiary
-				// "#Squad_Cell_Fighter"						"template_coop_fighter" // incendiary
-				// "#Squad_Cell_MachineGunner"					"template_coop_machinegunner" // Frag
-				// "#Squad_Cell_Sapper"							"template_coop_sapper" // RPG
-				// "#Squad_Cell_SharpShooter"					"template_coop_sharpshooter" // Frag
-				
 				"#Cell_Alpha"	// assault team #1
 				{
 					// role name								preset
@@ -80,6 +75,257 @@
 					"#Squad_Cell_Sapper"			"template_coop_sapper"	// RPG
 					"#Squad_Cell_SharpShooter"		"template_coop_sharpshooter"	// Frag
 				}
+				"#Cell_Charlie"	// assault team #2
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"	// smokes
+					"#Squad_Cell_Fighter"			"template_coop_fighter"	// incendiary
+					"#Squad_Cell_Fighter"			"template_coop_fighter"	// incendiary
+					"#Squad_Cell_MachineGunner"		"template_coop_machinegunner"	// Frag
+					"#Squad_Cell_Specialist"		"template_coop_specialist"	// smokes
+					"#Squad_Cell_Fighter"			"template_coop_fighter"	// incendiary
+					"#Squad_Cell_Sapper"			"template_coop_sapper"	// RPG
+					"#Squad_Cell_SharpShooter"		"template_coop_sharpshooter"	// Frag
+				}
+			}
+		}
+	}
+	"player_templates"
+	{
+		//security side
+		"template_recon_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_chest_rig"
+				"weapon"				"weapon_ae_coltcommando"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"barrel_silencer_sec1"
+				"weapon_upgrade"		"optic_hybridsight"
+				"weapon"				"weapon_m9"
+				"weapon_upgrade"		"barrel_silencer_pistol"
+				"weapon_upgrade"		"speed_holster"
+				"weapon"				"weapon_m67"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{
+				"gear"                      "sec_nightvision" 
+			}
+		}
+		"template_specialist_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_ae_g36c"
+				"weapon_upgrade"		"barrel_silencer_sec2"
+				"weapon_upgrade"		"underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_hybridsight"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon"				"weapon_m9"
+				"weapon_upgrade"		"barrel_silencer_pistol"
+				"weapon"				"weapon_c4"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision" 
+			}
+		}
+		"template_rifleman_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_tactical_carrier"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"		"underbarrel_m203_he"
+				"weapon_upgrade"		"ammo_ap_m4"
+				"weapon_upgrade"		"barrel_heavybarrel"
+				"weapon_upgrade"		"optic_eotech"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon"				"weapon_m9"
+			}
+		}
+		"template_breacher_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_mk18"
+				"weapon_upgrade"		"optic_eotech"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"barrel_silencer_sec2"
+				"weapon_upgrade"		"underbarrel_foregrip_sec1"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_ae_m72law"
+			}
+		}
+		"template_sniper_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_tactical_carrier"
+				"weapon"				"weapon_m40a1"
+				"weapon_upgrade"		"optic_mk4"
+				"weapon_upgrade"		"ammo_ap_m40a1"
+				"weapon_upgrade"		"fast_bolt_action"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"underbarrel_bipod"
+				"weapon"				"weapon_ae_glock19"
+				"weapon_upgrade"		"speed_holster"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_demolitions_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_tactical_carrier"
+				"weapon"				"weapon_ae_coltcommando"
+				"weapon_upgrade"		"optic_eotech"
+				"weapon_upgrade"		"underbarrel_foregrip_sec1"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_c4"
+				"weapon"				"weapon_m67"
+				"weapon"				"weapon_m67"
+				"weapon"				"weapon_m67"
+			}
+		}
+		"template_support_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"				"sec_chest_carrier"
+				"weapon"			"weapon_ae_m240"
+				"weapon_upgrade"		"ammo_hp_m14"
+				"weapon_upgrade"		"optic_hybridsight"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_m67"
+				"weapon"				"weapon_m67"				
+			}
+		
+		}
+		"template_designated_marksman_security_coop"
+		{
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_ae_scar"
+				"weapon_upgrade"		"optic_mk4"
+				"weapon_upgrade"		"ammo_ap_m14"
+				"weapon_upgrade"		"underbarrel_foregrip_sec2"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon"				"weapon_ae_glock19"
+				"weapon_upgrade"		"speed_holster"
+			}
+		}
+		
+		//insurgent side
+		"template_coop_specialist"
+		{
+			"buy_order"
+			{
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_akm"
+				"weapon_upgrade"		"barrel_silencer_ins1"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"optic_2xaimpoint"
+				"weapon_upgrade"		"quick_reload"
+				"weapon"				"weapon_m1911"
+				"weapon_upgrade"		"barrel_silencer_pistol"
+				"weapon"				"weapon_c4_ied"
+				"weapon"				"weapon_f1"
+				
+			}
+		}
+		"template_coop_fighter"
+		{
+			"buy_order"
+			{
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_ak74"
+				"weapon_upgrade"		"underbarrel_gp25_he"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"optic_kobra"
+				"weapon_upgrade"		"ammo_ap_ak74"
+				"weapon"				"weapon_m1911"
+				"weapon_upgrade"		"speed_holster"
+				"weapon_upgrade"		"quick_reload"
+			}
+		}
+		"template_coop_machinegunner"
+		{
+			"buy_order"
+			{
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_ae_pecheneg"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"optic_2xaimpoint"
+				"weapon_upgrade"		"ammo_ap_m249"
+				"weapon"				"weapon_ae_pm9"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_coop_sapper"
+		{
+			"buy_order"
+			{
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_glock18"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"speed_holster"
+				"weapon_upgrade"		"barrel_silencer_pistol"
+				"weapon"				"weapon_rpg7"
+				"weapon"				"weapon_f1"
+			}
+		}
+		"template_coop_sharpshooter"
+		{
+			"buy_order"
+			{
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_ae_l118a1"
+				"weapon_upgrade"		"fast_bolt_action"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"underbarrel_bipod"
+				"weapon_upgrade"		"ammo_ap_m40a1"
+				"weapon"				"weapon_ae_beretta93r"
+				"weapon_upgrade"		"tactical_sling"
+				"weapon_upgrade"		"quick_reload"
+				"weapon_upgrade"		"barrel_silencer_integrated"
 			}
 		}
 	}
@@ -143,7 +389,7 @@
 	   //slot 1/ primary weapons
 	   	"weapon_akm"
 		{
-			"weapon_cost"		"0"
+			"weapon_cost"		"1"
 			"team_access"	"insurgent"
 		}
 		"weapon_ak74"
@@ -153,11 +399,11 @@
 		}
 		"weapon_rpk"
 		{
-			"weapon_cost"		"0"
+			"weapon_cost"		"1"
 			"team_access"	"insurgent"
 			
 		}
-		"weapon_m16"
+		"weapon_m16a4"
 		{
 			"weapon_cost"		"1"
 		}
