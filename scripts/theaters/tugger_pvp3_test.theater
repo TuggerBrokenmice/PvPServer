@@ -32,17 +32,6 @@
 					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security_coop"	
 					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"		
 				}
-				"#Fireteam_Charlie"	// small arms
-				{
-					"#Squad_Fireteam_WeaponsSgt"			"template_recon_security_coop"
-					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
-					"#Squad_Fireteam_Rifleman"		"template_rifleman_security_coop"
-					"#Squad_Fireteam_Breacher"		"template_breacher_security_coop"
-					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"	
-					"#Squad_Fireteam_Support"		"template_support_security_coop"	
-					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security_coop"	
-					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"		
-				}
 			}
 		}
 		
@@ -64,18 +53,6 @@
 				}
 				
 				"#Cell_Bravo"	// assault team #2
-				{
-					// role name								preset
-					"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"	// smokes
-					"#Squad_Cell_Fighter"			"template_coop_fighter"	// incendiary
-					"#Squad_Cell_Fighter"			"template_coop_fighter"	// incendiary
-					"#Squad_Cell_MachineGunner"		"template_coop_machinegunner"	// Frag
-					"#Squad_Cell_Specialist"		"template_coop_specialist"	// smokes
-					"#Squad_Cell_Fighter"			"template_coop_fighter"	// incendiary
-					"#Squad_Cell_Sapper"			"template_coop_sapper"	// RPG
-					"#Squad_Cell_SharpShooter"		"template_coop_sharpshooter"	// Frag
-				}
-				"#Cell_Charlie"	// assault team #2
 				{
 					// role name								preset
 					"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"	// smokes
@@ -179,7 +156,7 @@
 				"weapon"				"weapon_kabar"
 				"gear"					"sec_tactical_carrier"
 				"weapon"				"weapon_m40a1"
-				"weapon_upgrade"		"optic_mk4"
+				"weapon_upgrade"		"optic_scope_mk4"
 				"weapon_upgrade"		"ammo_ap_m40a1"
 				"weapon_upgrade"		"fast_bolt_action"
 				"weapon_upgrade"		"quick_reload"
@@ -234,7 +211,7 @@
 				"gear"					"sec_chest_rig"
 				"gear"					"sec_nightvision"
 				"weapon"				"weapon_ae_scar"
-				"weapon_upgrade"		"optic_mk4"
+				"weapon_upgrade"		"optic_scope_mk4"
 				"weapon_upgrade"		"ammo_ap_m14"
 				"weapon_upgrade"		"underbarrel_foregrip_sec2"
 				"weapon_upgrade"		"tactical_sling"
@@ -304,7 +281,7 @@
 			{
 				"gear"					"ins_chest_carrier"
 				"weapon"				"weapon_kabar"
-				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_ae_glock18"
 				"weapon_upgrade"		"quick_reload"
 				"weapon_upgrade"		"speed_holster"
 				"weapon_upgrade"		"barrel_silencer_pistol"
@@ -318,6 +295,7 @@
 			{
 				"gear"					"ins_chest_carrier"
 				"weapon"				"weapon_ae_l118a1"
+				"weapon_upgrade"		"optic_po4x24"
 				"weapon_upgrade"		"fast_bolt_action"
 				"weapon_upgrade"		"quick_reload"
 				"weapon_upgrade"		"underbarrel_bipod"
@@ -386,6 +364,17 @@
 	}
 	"weapons"
 	{
+		"weapon_kabar"
+		{
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"200"
+				"MeleeDamageBehindBonus"		"200"
+				"MeleeDamageType"			"DMG_SLASH"
+				"MeleeWeaponIdleTime"			"2"
+			}
+		}
 	   //slot 1/ primary weapons
 	   	"weapon_akm"
 		{
@@ -1024,8 +1013,8 @@
 				
 				"weapon_ae_l118a1"
 				{
-					"fov_wpn_ironsight"			"35"
-					"fov_wpn_focus"				"44"
+					"fov_wpn_ironsight"			"33"
+					"fov_wpn_focus"				"38"
 				}				
 				
 				"weapon_mp5"
